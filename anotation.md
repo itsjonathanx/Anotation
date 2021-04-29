@@ -13,4 +13,4 @@
 ## Mensagem
   * Pedido(request)
     * Um pedido HTTP é composto das seguintes partes:
-    ![Exemplo de um pedido]{https://www.webdevdrops.com/_next/image?url=%2Fhttp-desenvolvedores-frontend%2Fimages%2Fhttp-br-2-1024x461.png&w=1080&q=75}
+    ![Exemplo de um pedido](https://www.webdevdrops.com/_next/image?url=%2Fhttp-desenvolvedores-frontend%2Fimages%2Fhttp-br-2-1024x461.png&w=1080&q=75)
