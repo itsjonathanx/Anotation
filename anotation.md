@@ -62,3 +62,67 @@
     Content-Type: text/html
 
   ``<html>...</html> ``
+
+---
+
+## Instalando JSON Server
+  * https://github.com/typicode/json-server
+  * npm install -g json-server
+
+  #### Criar um arquivo db.json
+    {
+      "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+      ],
+      "comments": [
+        { "id": 1, "body": "some comment", "postId": 1 }
+      ],
+      "profile": { "name": "typicode" }
+    }
+  #### Start JSON-Server
+    json-server --watch db.json
+
+  #### Se você entrar no http://localhost:3000/posts, vai pegar
+    { 
+      "id": 1, 
+      "title": "json-server", 
+      "author": "typicode" 
+    }
+
+**Idempotente - que sempre vem a mesma resposta**
+
+## Métodos 
+  ### GET
+    * Pegar um recurso
+    * Somente recebe dados
+    * Características 
+      * Seguro: Sim
+      * Idempotente: Sim
+      * Body
+        * REQUEST: Não
+        * RESPONSE: Sim
+      * Cacheable: Sim
+      * Uso em formulários HTML: Sim
+  
+  ### HEAD
+    * Semelhante ao GET, porém, recebemos somente o cabeçalho
+      * HEAD /post
+    * Características
+      * Seguro: Sim
+      * Idempotente: Sim
+      * BODY
+        * REQUEST: Não
+        * RESPONSE: Não
+      * Uso em formulários HTML: Não
+      * Cachable: Sim
+  
+  ### POST
+    * Publicar/Cadastrar um Recurso
+    * Características
+      * Seguro: Não
+      * Idempotente: Não
+      * Body
+        * REQUEST
+        * RESPONSE
+      * Uso em formulários HTML: Sim
+      * Poderá ser cacheable
