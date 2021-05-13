@@ -126,3 +126,51 @@
         * RESPONSE
       * Uso em formulários HTML: Sim
       * Poderá ser cacheable
+
+  ### PUT
+    * Cria um novo ou Atualiza um Recurso
+      * PUT /profile HTTP/1.1
+      * Muito utilizado para atualizar
+      * Criação 
+        * Status code 201
+      * Atualização 
+        * Status code 204 ou 200
+    * Características
+      * Seguro: Não
+      * Idempotente: Sim
+      * Body
+        * Request: Sim
+        * Response: Não
+      * Uso em formulários HTML: Não
+      * Cacheable: Não
+  
+  ### PATCH
+    * Modificação parcial de um recurso
+      * Atualizar parte do recurso, diferente do PUT que atualiza por completo
+      * PATCH /posts/1 HTTP/1.1
+    * Características
+      * Seguro: Não
+      * Idempotente: Não
+      * Body
+        * Request: Sim
+        * Response: Sim
+      * Uso em formulários HTML: Não
+      * Cacheable: Não
+
+  ### DELETE
+    * Remover um recurso
+      * DELETE /posts HTTP/1.1
+      * Status code
+        * 202: Accepted
+        * 204: No content
+        * 200: OK
+    * Características
+      * Seguro: Não
+      * Idempotente: Sim
+      * Body
+        * Request: Possibilidade
+        * Response: Possibilidade
+      * Uso em formulários HTML: Não
+      * Cacheable: Não
+## Headers
+  
