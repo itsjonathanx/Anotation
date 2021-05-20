@@ -176,6 +176,8 @@
   
 
 ## Um pouco mais sobre Status Code
+  ### https://devdocs.io/http-status/
+
   ### 100
     * 100: Continue
   
