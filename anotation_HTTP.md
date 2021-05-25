@@ -51,12 +51,12 @@
       * Conteúdo
       * JSON
 
-  ## REQUEST MESSAGE
+  ### REQUEST MESSAGE
     GET/index.html HTTP/1.1
     User-Agent: Mozilla/4.0
     Accept: text/html
 
-  ## RESPONSE MESSAGE
+  ### RESPONSE MESSAGE
     HTTP/1.1 200 OK
     Server: Express
     Content-Type: text/html
@@ -69,7 +69,7 @@
   * https://github.com/typicode/json-server
   * npm install -g json-server
 
-  #### Criar um arquivo db.json
+  ### Criar um arquivo db.json
     {
       "posts": [
         { "id": 1, "title": "json-server", "author": "typicode" }
@@ -79,10 +79,10 @@
       ],
       "profile": { "name": "typicode" }
     }
-  #### Start JSON-Server
+  ### Start JSON-Server
     json-server --watch db.json
 
-  #### Se você entrar no http://localhost:3000/posts, vai pegar
+  ### Se você entrar no http://localhost:3000/posts, vai pegar
     { 
       "id": 1, 
       "title": "json-server", 
