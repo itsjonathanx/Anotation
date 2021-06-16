@@ -1,7 +1,9 @@
 // Manipulando String e Números
 // Transformando um número quebrado com 2 casas decimais e trocar ponto e vírgula
-let number = 124.54333344
-console.log(number.toFixed(2).replace(".", ","))
+let phraseq = "Este site é para perdedores"
+let re = /[aeiou]/gi
+let newPhrase = phraseq.replace(re, "") 
+console.log(newPhrase) 
 
 // Manipulando Strings e Arrays
 // Separe um texto que contem espaços, em um novo arrays onde cada texto é uma posição do array. Depois disso, transforme o array em um texto e onde eram espaços, coloque _
